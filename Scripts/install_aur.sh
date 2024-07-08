@@ -1,9 +1,3 @@
-#!/usr/bin/env bash
-#|---/ /+-------------------------------------------+---/ /|#
-#|--/ /-| Script to install aur helper, yay or paru |--/ /-|#
-#|-/ /--| Prasanth Rangan                           |-/ /--|#
-#|/ /---+-------------------------------------------+/ /---|#
-
 scrDir=$(dirname "$(realpath "$0")")
 source "${scrDir}/global_fn.sh"
 if [ $? -ne 0 ]; then
@@ -16,7 +10,7 @@ if chk_list "aurhlpr" "${aurList[@]}"; then
     exit 0
 fi
 
-aurhlpr="${1:-yay}"
+aurhlpr="yay"
 
 if [ -d "$HOME/Clone" ]; then
     echo "~/Clone directory exists..."
