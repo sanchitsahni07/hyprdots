@@ -135,6 +135,7 @@ export getAur="yay"
     #     echo "${myShell}" >> "${scrDir}/install_pkg.lst"
     # fi
 export myShell="zsh"
+echo "${myShell}" >> "${scrDir}/install_pkg.lst"
     #--------------------------------#
     # install packages from the list #
     #--------------------------------#
